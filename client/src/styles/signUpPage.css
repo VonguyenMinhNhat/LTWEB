@@ -1,0 +1,79 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600;700&display=swap');
+/* Nền chung */
+.nen-dang-ky {
+    background-color: #f0f4f8;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/049/004/338/non_2x/healthy-snacks-with-blank-space-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Khung chính chứa 2 bên */
+.dangky-khung-chinh {
+    background: rgba(255,255,255,0.90);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Bên Form */
+.dangky-form-benh {
+    /* sử dụng Tailwind utility chính trong JSX */
+}
+
+/* Tiêu đề & mô tả */
+.dangky-tieu-de,
+.dangky-mo-ta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Nút MXH */
+.dangky-mxh-khung button {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Khung HOẶC */
+.dangky-hoac-duong-ke {
+    background: #d1d5db;
+}
+
+.dangky-hoac-chu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Input & lỗi */
+.dangky-input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.dangky-loi {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Nút Tiếp Theo */
+.dangky-nut-tieptuc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Bên phải - đã có tài khoản */
+.dangky-da-co-tai-khoan {
+    /* gradient đã đặt trong JSX */
+}
+
+.dangky-da-co-tieu-de,
+.dangky-da-co-mo-ta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.dangky-nut-dangnhap {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    }

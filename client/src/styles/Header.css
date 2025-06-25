@@ -1,0 +1,174 @@
+﻿/* Header.css */
+
+/* VÙNG CHỨA ICON THÔNG BÁO */
+.notif-container {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    z-index: 50;
+}
+
+/* NÚT CHUÔNG */
+.notif-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* CHẤM ĐỎ KHI CÒN CHƯA ĐỌC */
+.notif-dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+/* PANEL HIỂN THỊ THÔNG BÁO */
+.notif-panel {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* HEADER CỦA PANEL */
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #f9fafb;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* NÚT ĐÓNG PANEL */
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* NỘI DUNG THÔNG BÁO */
+.notif-content {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* DANH SÁCH THÔNG BÁO */
+.notif-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* MỖI MỤC THÔNG BÁO */
+.notif-item {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    cursor: pointer;
+}
+
+    .notif-item:last-child {
+        border-bottom: none;
+    }
+
+/* NỘI DUNG MESSAGE */
+.notif-message {
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+/* THỜI GIAN */
+.notif-time {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+/* Chưa đọc: in đậm, màu XANH */
+.notif-item.unread .notif-message {
+    font-weight: bold;
+    color: #1d4ed8; /* màu xanh dương */
+}
+
+/* Đã đọc: mờ, màu xám */
+.notif-item.read .notif-message {
+    color: #6b7280;
+    font-weight: normal;
+}
+
+/* NÚT Delete (biểu tượng thùng rác) */
+.delete-notif-btn {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #dc2626; /* đỏ */
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* NÚT MARK ALL AS READ */
+.delete-notif-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.mark-read-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #10b981; /* emerald-500 */
+    color: white;
+    border: none;
+    border-radius: 0 0 6px 6px; /* chỉ bo góc dưới */
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+    .mark-read-btn:hover {
+        background-color: #059669; /* emerald-600 */
+    }
+
+/* Scroll bar (nếu cần) */
+.notif-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notif-panel::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.notif-panel::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}

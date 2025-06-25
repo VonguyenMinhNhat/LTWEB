@@ -1,0 +1,13 @@
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\bin\Debug\net8.0\NutritionApp.Core.deps.json
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\bin\Debug\net8.0\NutritionApp.Core.dll
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\bin\Debug\net8.0\NutritionApp.Core.pdb
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.csproj.AssemblyReference.cache
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.AssemblyInfoInputs.cache
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.AssemblyInfo.cs
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.sourcelink.json
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.dll
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\refint\NutritionApp.Core.dll
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\NutritionApp.Core.pdb
+C:\Users\mrnha\Desktop\CSDLNC\DO_AN_WEB\nutrition-app\NutritionApp.Core\obj\Debug\net8.0\ref\NutritionApp.Core.dll

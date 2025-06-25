@@ -1,0 +1,149 @@
+﻿/* Sidebar container */
+.sidebar {
+    width: 16rem;
+    background: #1a202c;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    overflow: hidden;
+    z-index: 20;
+}
+
+    /* Khi thu gọn */
+    .sidebar.collapsed {
+        width: 4rem;
+    }
+
+/* Header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem 2rem;
+}
+
+    .sidebar-header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: margin-left 0.3s ease;
+    margin-left: auto;
+}
+
+/* Menu */
+.menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .menu-list li {
+        margin-bottom: 1rem;
+    }
+
+    .menu-list a,
+    .menu-list button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.75rem 1.25rem;
+        background: none;
+        border: none;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+        .menu-list a:hover,
+        .menu-list button:hover {
+            background: rgba(255,255,255,0.1);
+}
+
+    .menu-list i {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+}
+
+    .menu-list span {
+        transition: opacity 0.3s;
+}
+
+/* Collapsed */
+.sidebar.collapsed .sidebar-header .title,
+.sidebar.collapsed .menu-list span {
+    display: none;
+    }
+
+.sidebar.collapsed .menu-list a,
+.sidebar.collapsed .menu-list button {
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+
+.sidebar.collapsed .menu-list i {
+    margin: 0;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 16rem;
+    transition: margin-left 0.3s;
+}
+
+/* Khi sidebar thu gọn */
+.sidebar.collapsed ~ .main-content {
+    margin-left: 4rem;
+}
+
+.sidebar.collapsed .toggle-btn {
+    margin-left: 0.225rem; 
+}
+/* Chỉ highlight khi hover */
+.menu-list a:hover,
+.menu-list button:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Không highlight khi click (active) hay có focus từ keyboard */
+.menu-list a:active,
+.menu-list button:active,
+.menu-list a:focus,
+.menu-list button:focus {
+    background: none;
+    outline: none;
+}
+
+/* Đảm bảo link không đổi màu sau khi đã click (visited) */
+.menu-list a:link,
+.menu-list a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Link tiêu đề sidebar luôn trắng, không gạch chân */
+.sidebar-header .title,
+.sidebar-header .title:link,
+.sidebar-header .title:visited,
+.sidebar-header .title:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+    /* Nếu vẫn muốn giữ hover effect (ví dụ đổi nhẹ nền) */
+    .sidebar-header .title:hover {
+        /* ví dụ sáng hơn một chút */
+        background: rgba(255,255,255,0.1);
+    }
+

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~@fortawesome/fontawesome-svg-core/styles.css";
+
+.p-6 {
+    padding: 1.5rem;
+    background: #f7fafc;
+}

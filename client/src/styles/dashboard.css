@@ -1,0 +1,113 @@
+﻿.dashboard-root {
+    display: flex;
+    min-height: 100vh;
+    background: #f3f4f6;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 32px;
+    background: #f3f4f6;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.dashboard-content.collapsed {
+    margin-left: 80px;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #22223b;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.dashboard-account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-account i {
+    color: #f59e42;
+    font-size: 1.3rem;
+}
+
+.dashboard-account a {
+    color: #10b981;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dashboard-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+    .dashboard-charts {
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+    padding: 32px 28px 28px 28px;
+    min-width: 320px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid #f1f5f9;
+}
+
+.dashboard-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: #374151;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-chart {
+    flex: 1;
+    min-height: 320px;
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 18px 10px 10px 10px;
+}
+
+.dashboard-loading {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.2rem;
+    margin-top: 80px;
+}
+
+.dashboard-footer {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 48px;
+    font-size: 1rem;
+}
+
+.dashboard-container {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

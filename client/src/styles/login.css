@@ -1,0 +1,70 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600;700&display=swap');
+/* nền đăng nhập */
+.nen-dang-nhap {
+    background-image: url("http://www.emro.who.int/images/stories/nutrition/balanced-diet.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Khung chính */
+.dangnhap-khung-chinh {
+    background: rgba(255,255,255,0.9);
+    border-radius: 1rem;
+}
+
+/* Tiêu đề & mô tả */
+.dangnhap-tieu-de,
+.dangnhap-mo-ta,
+.chuakco-tieu-de,
+.chuakco-mo-ta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Nút mạng xã hội */
+.dangnhap-mxh-khung button {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Khung HOẶC */
+.dangnhap-hoac-duong-ke {
+    background: #d1d5db;
+}
+
+.dangnhap-hoac-chu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Input & lỗi */
+.dangnhap-input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.dangnhap-loi {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Nút Đăng Nhập */
+.dangnhap-nut {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Bên phải: chưa có tài khoản */
+.dangnhap-chuakco {
+    /* gradient đã đặt trong JSX */
+}
+
+.chuakco-nut-dangky {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+

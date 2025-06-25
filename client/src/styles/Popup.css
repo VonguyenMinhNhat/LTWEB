@@ -1,0 +1,110 @@
+﻿/* client/src/styles/Popup.css */
+
+/* Overlay mờ toàn màn hình */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeInOverlay 0.2s ease forwards;
+}
+
+    /* Khi đóng, fade-out */
+    .popup-overlay.close {
+        animation: fadeOutOverlay 0.2s ease forwards;
+    }
+
+/* Popup Box chính */
+.popup-box {
+    background: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popupZoomIn 0.25s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* Viền cho success / error */
+    .popup-box.success {
+        border: 2px solid #10b981; /* màu xanh lá */
+    }
+
+    .popup-box.error {
+        border: 2px solid #ef4444; /* màu đỏ */
+    }
+
+/* Nội dung thông điệp */
+.popup-message {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre-wrap; /* tự xuống dòng khi gặp \n */
+}
+
+/* Nút đóng ở giữa */
+.popup-close-btn {
+    background-color: #3b82f6; /* Màu xanh dương */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto; /* đẩy nút xuống giữa hoặc đáy */
+}
+
+    /* Hover state cho nút */
+    .popup-close-btn:hover {
+        background-color: #2563eb;
+    }
+
+/* Khi cần animation mờ dần overlay */
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOverlay {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animation zoom cho Popup */
+@keyframes popupZoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

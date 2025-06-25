@@ -1,0 +1,69 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+body, input, select, button {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* =============================
+   Nền toàn trang
+============================= */
+.info-nensignup {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/049/004/338/non_2x/healthy-snacks-with-blank-space-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============================
+   Khung form
+============================= */
+.info-form-khung {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 32rem;
+}
+
+/* =============================
+   Tiêu đề
+============================= */
+.info-tieude {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 1.5rem;
+}
+
+/* =============================
+   Ô nhập liệu
+============================= */
+.info-input,
+.info-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* =============================
+   Nút gửi
+============================= */
+.info-submit-btn {
+    background: #2563eb;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:
+}
